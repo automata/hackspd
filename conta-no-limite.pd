@@ -1,0 +1,19 @@
+#N canvas 374 64 450 205 10;
+#X obj 31 59 i;
+#X obj 81 61 + 1;
+#X obj 31 15 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 31 103 mod 100;
+#X floatatom 31 157 5 0 0 0 - - -;
+#X text 109 60 <-- este é um contador... sempre que desejar usar contadores
+\, use esse esquema!!;
+#X text 83 102 <-- o módulo de 100 vai garantir que os valores vindos
+do contador continuem no limite de 0 a 100;
+#X text 50 13 <-- dê um monte de bangs aqui... lá embaixo vai ir de
+0 a 99 sempre...;
+#X text 67 157 <-- vai sempre estar entre 0 a 99 sempre;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;

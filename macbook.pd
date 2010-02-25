@@ -1,0 +1,20 @@
+#N canvas 706 201 520 300 10;
+#X obj 13 135 shell;
+#X msg 13 79 cat /sys/devices/platform/applesmc.768/position | sed
+'s/(//g' | sed 's/)//g';
+#X obj 13 186 pack f f f;
+#X obj 13 210 unpack f f f;
+#X obj 13 261 outlet;
+#X obj 58 261 outlet;
+#X obj 103 261 outlet;
+#X obj 13 49 inlet;
+#X text 10 12 macbook accel ~ http://automata.cc ~ 2010;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 0 0 2 2;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 3 2 6 0;
+#X connect 7 0 1 0;

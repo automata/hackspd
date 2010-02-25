@@ -1,0 +1,22 @@
+#N canvas 0 0 509 338 10;
+#X obj 60 81 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X floatatom 26 194 5 0 0 0 - - -;
+#X floatatom 79 194 5 0 0 0 - - -;
+#X floatatom 131 194 5 0 0 0 - - -;
+#X obj 60 115 metro 100;
+#X obj 60 146 macbook;
+#X text 196 119 every time you bang the [macbook] \, it returns x \,
+y \, z of macbook's accelerometer;
+#X text 226 181 make sure you have applesmc module loaded: sudo modprobe
+applesmc;
+#X text 17 13 macbook accel ~ http://automata.cc ~ 2010;
+#X text 84 80 <---- push here...;
+#X text 36 211 X;
+#X text 89 211 Y;
+#X text 142 211 Z;
+#X connect 0 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X connect 5 1 2 0;
+#X connect 5 2 3 0;

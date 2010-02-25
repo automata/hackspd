@@ -1,0 +1,15 @@
+#N canvas 620 160 450 300 10;
+#X obj 47 30 netreceive 3000;
+#X floatatom 155 69 5 0 0 0 - - -;
+#X obj 53 189 nvlvideo;
+#X msg 206 100 foo erasehead_140.nvl;
+#X floatatom 80 78 5 0 0 0 - - -;
+#X obj 58 123 pack f f f;
+#X obj 30 74 t f f;
+#X connect 0 0 4 0;
+#X connect 0 0 6 0;
+#X connect 0 1 1 0;
+#X connect 3 0 2 1;
+#X connect 5 0 2 0;
+#X connect 6 0 5 0;
+#X connect 6 1 5 1;

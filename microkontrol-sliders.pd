@@ -1,0 +1,60 @@
+#N canvas 462 84 812 508 10;
+#X obj 116 49 ctlin 80;
+#X obj 174 49 ctlin 81;
+#X obj 231 49 ctlin 82;
+#X obj 288 49 ctlin 83;
+#X obj 344 49 ctlin 87;
+#X obj 402 49 ctlin 88;
+#X obj 459 49 ctlin 89;
+#X obj 516 49 ctlin 90;
+#X obj 100 100 cnv 15 140 65 empty empty microKONTROL_sliders 3 7 0
+10 -228856 -1 0;
+#X obj 224 117 vsl 10 40 0 127 0 0 mk-slider-8 empty empty 0 -9 0 10
+-2562 -86853 -1 3900 1;
+#X obj 207 117 vsl 10 40 0 127 0 0 mk-slider-7 empty empty 0 -9 0 10
+-2562 -86853 -1 3132 1;
+#X obj 191 117 vsl 10 40 0 127 0 0 mk-slider-6 empty empty 0 -9 0 10
+-2562 -86853 -1 3900 1;
+#X obj 174 117 vsl 10 40 0 127 0 0 mk-slider-5 empty empty 0 -9 0 10
+-2562 -86853 -1 1351 1;
+#X obj 157 117 vsl 10 40 0 127 0 0 mk-slider-4 empty empty 0 -9 0 10
+-2562 -86853 -1 2825 1;
+#X obj 140 117 vsl 10 40 0 127 0 0 mk-slider-3 empty empty 0 -9 0 10
+-2562 -86853 -1 2856 1;
+#X obj 123 117 vsl 10 40 0 127 0 0 mk-slider-2 empty empty 0 -9 0 10
+-2562 -86853 -1 3900 1;
+#X obj 106 117 vsl 10 40 0 127 0 0 mk-slider-1 empty empty 0 -9 0 10
+-2562 -86853 -1 2641 1;
+#X obj 40 325 outlet;
+#X obj 40 299 r mk-slider-1;
+#X obj 128 325 outlet;
+#X obj 213 325 outlet;
+#X obj 301 325 outlet;
+#X obj 387 325 outlet;
+#X obj 475 325 outlet;
+#X obj 560 325 outlet;
+#X obj 648 325 outlet;
+#X obj 128 299 r mk-slider-2;
+#X obj 213 299 r mk-slider-3;
+#X obj 301 299 r mk-slider-4;
+#X obj 387 299 r mk-slider-5;
+#X obj 475 299 r mk-slider-6;
+#X obj 560 299 r mk-slider-7;
+#X obj 648 299 r mk-slider-8;
+#X connect 0 0 16 0;
+#X connect 1 0 15 0;
+#X connect 2 0 14 0;
+#X connect 3 0 13 0;
+#X connect 4 0 12 0;
+#X connect 5 0 11 0;
+#X connect 6 0 10 0;
+#X connect 7 0 9 0;
+#X connect 18 0 17 0;
+#X connect 26 0 19 0;
+#X connect 27 0 20 0;
+#X connect 28 0 21 0;
+#X connect 29 0 22 0;
+#X connect 30 0 23 0;
+#X connect 31 0 24 0;
+#X connect 32 0 25 0;
+#X coords 0 -1 1 1 140 68 1 100 100;

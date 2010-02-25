@@ -1,0 +1,30 @@
+#N canvas 278 40 462 304 10;
+#X msg 118 6 close;
+#X msg 68 6 open 4;
+#X obj 315 72 int;
+#X obj 318 39 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9000 1;
+#X obj 95 188 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4900 1;
+#X msg 195 39 print l;
+#X msg 254 39 print d;
+#X msg 12 6 devices;
+#X text 10 68 CONTROLES;
+#X text 391 73 ENTRADAS;
+#X text 48 185 SAÍDA;
+#X obj 157 125 comport 9600;
+#X text 230 187 <--- slider controlado pelo pot;
+#X text 16 -70 lista dispositivos (portas) abertos | | | | V;
+#X text 70 -51 abre a porta | | V;
+#X text 122 -35 fecha a porta | V;
+#X text 196 -5 liga led | V;
+#X text 263 -18 desliga led | | V;
+#X text 350 -2 controla brilho | V;
+#X connect 0 0 11 0;
+#X connect 1 0 11 0;
+#X connect 2 0 11 0;
+#X connect 3 0 2 0;
+#X connect 5 0 11 0;
+#X connect 6 0 11 0;
+#X connect 7 0 11 0;
+#X connect 11 0 4 0;
