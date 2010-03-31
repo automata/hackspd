@@ -1,0 +1,23 @@
+#N canvas 652 140 527 300 10;
+#X obj 20 80 gemwin;
+#X msg 32 11 create \, 1;
+#X msg 53 37 destroy;
+#X obj 190 154 gemhead;
+#X obj 190 243 square;
+#X obj 314 19 adc~;
+#X obj 314 51 fiddle~;
+#X floatatom 353 79 5 0 0 0 - - -;
+#X obj 353 107 autoscale 0 10;
+#X text 101 11 <--- aperte aqui!!!;
+#X text 18 99 essa parte cria a janela para mostrar o grafico;
+#X text 260 245 essa parte desenha um quadrado mudando seu tamanho
+conforme o volme do audio de entrada;
+#X text 391 26 essa parte captura o audio do microfone e mede o volume
+na caixinha...;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
+#X connect 6 3 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 4 1;

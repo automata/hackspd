@@ -1,0 +1,59 @@
+#N canvas 331 48 414 595 10;
+#X obj 275 189 s janela;
+#X msg 275 99 dimen 1280 768;
+#X msg 293 124 dimen 800 600;
+#X msg 308 149 dimen 640 480;
+#X msg 172 267 \; janela fullscreen \$1;
+#X msg 176 327 \; janela cursor \$1;
+#X msg 173 382 \; janela border \$1;
+#X obj 13 18 cnv 15 120 200 empty empty control-gemwin 2 8 0 11 -260097
+-66577 0;
+#X obj 352 -59 loadbang;
+#X msg 351 -8 reset;
+#X obj 352 -40 t b b;
+#X obj 285 32 gemwin;
+#X obj 196 -78 route create;
+#X msg 196 -42 set destroy;
+#X msg 196 -112 set create;
+#X msg 217 -7 create \, 1;
+#X msg 285 -7 destroy;
+#X obj 20 39 bng 15 250 50 0 empty empty on/off_gemwin 17 7 0 10 -258113
+-1 -1;
+#X msg 126 -147 create;
+#X obj 51 65 bng 15 250 50 0 empty empty 1280x768 17 7 0 10 -159808
+-1 -1;
+#X obj 51 84 bng 15 250 50 0 empty empty 800x600 17 7 0 10 -161216
+-1 -1;
+#X obj 51 104 bng 15 250 50 0 empty empty 640x480 17 7 0 10 -162752
+-1 -1;
+#X obj 33 140 tgl 15 0 empty empty fullscreen 17 7 0 10 -4034 -1 -1
+0 1;
+#X obj 33 167 tgl 15 0 empty empty cursor 17 7 0 10 -257985 -1 -1 1
+1;
+#X obj 34 192 tgl 15 0 empty empty borders 17 7 0 10 -257985 -1 -1
+1 1;
+#X obj 326 -101 r janela;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 8 0 10 0;
+#X connect 9 0 11 0;
+#X connect 10 1 9 0;
+#X connect 12 0 13 0;
+#X connect 12 0 15 0;
+#X connect 12 1 14 0;
+#X connect 12 1 16 0;
+#X connect 13 0 18 0;
+#X connect 14 0 18 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 17 0 18 0;
+#X connect 18 0 12 0;
+#X connect 19 0 1 0;
+#X connect 20 0 2 0;
+#X connect 21 0 3 0;
+#X connect 22 0 4 0;
+#X connect 23 0 5 0;
+#X connect 24 0 6 0;
+#X connect 25 0 11 0;
+#X coords 0 -1 1 1 120 200 1 12 18;
