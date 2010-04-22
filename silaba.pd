@@ -1,0 +1,57 @@
+#N canvas 0 0 900 482 10;
+#X obj 352 13 cnv 15 150 40 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X obj 50 45 adc~;
+#X obj 50 178 writesf~ 2;
+#X msg 110 89 start;
+#X msg 121 114 stop;
+#X obj 189 44 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 191 70 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 214 45 <- GRAVAR;
+#X text 212 67 <- PARAR DE GRAVAR;
+#X obj 398 32 bng 15 250 50 0 empty empty grava 20 7 0 10 -258113 -262144
+-1;
+#X msg 222 287 open /home/vilson/silabas/ba.wav;
+#X obj 544 121 readsf~ 2;
+#X obj 453 32 bng 15 250 50 0 empty empty fala 20 7 0 10 -4034 -257985
+-1;
+#X msg 626 92 start;
+#X msg 657 127 stop;
+#X obj 268 159 delay 3000;
+#X obj 561 -21 inlet;
+#X obj 404 219 sprintf open /home/vilson/silabas/%s.wav;
+#X obj 404 244 prepend set;
+#X obj 629 -22 inlet;
+#X obj 698 -22 inlet;
+#X symbolatom 359 31 5 0 0 1 - - -;
+#X obj 521 195 prepend set;
+#X obj 550 291 outlet~;
+#X obj 603 292 outlet~;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 10 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 9 0 5 0;
+#X connect 9 0 15 0;
+#X connect 10 0 2 0;
+#X connect 10 0 11 0;
+#X connect 11 0 23 0;
+#X connect 11 1 24 0;
+#X connect 12 0 13 0;
+#X connect 12 0 10 0;
+#X connect 13 0 11 0;
+#X connect 14 0 11 0;
+#X connect 15 0 6 0;
+#X connect 16 0 17 0;
+#X connect 16 0 22 0;
+#X connect 17 0 18 0;
+#X connect 18 0 10 0;
+#X connect 19 0 9 0;
+#X connect 20 0 12 0;
+#X connect 22 0 21 0;
+#X coords 0 -1 1 1 156 46 1 349 10;

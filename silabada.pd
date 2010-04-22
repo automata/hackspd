@@ -1,0 +1,69 @@
+#N canvas 0 0 885 318 10;
+#X obj 1 -116 cnv 15 440 283 empty empty gravaDor 10 12 0 14 -261682
+-66577 0;
+#X obj 12 -78 adc~;
+#X obj 11 140 writesf~ 2;
+#X msg 66 62 start;
+#X msg 114 62 stop;
+#X obj 66 39 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 114 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 157 -106 bng 15 250 50 0 empty empty grava 20 7 0 10 -258113
+-262144 -1;
+#X msg 184 36 open /home/vilson/silabas/2.wav;
+#X obj 184 -11 sprintf open /home/vilson/silabas/%s.wav;
+#X obj 184 12 prepend set;
+#X obj 184 -41 i;
+#X obj 211 -41 + 1;
+#X obj 157 -75 t b b;
+#X obj 114 13 delay 300;
+#X msg 215 -76 -1;
+#X obj 215 -106 bng 15 250 50 0 empty empty zera 20 7 0 10 -66577 -262144
+-1;
+#X obj 443 -116 cnv 15 440 283 empty empty falaDor 10 12 0 14 -203904
+-66577 0;
+#X obj 556 71 readsf~ 2;
+#X obj 556 -107 bng 15 250 50 0 empty empty fala 20 7 0 10 -4034 -257985
+-1;
+#X msg 556 44 start;
+#X obj 555 114 output~;
+#X msg 625 42 open /home/vilson/silabas/0.wav;
+#X obj 625 -10 sprintf open /home/vilson/silabas/%s.wav;
+#X obj 625 15 prepend set;
+#X obj 556 -80 nbx 5 14 0 10000 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 0 256;
+#X obj 556 -54 t b b f;
+#X obj 1 -148 cnv 15 881 30 empty empty silaBada_-_-_-_-_v0.1_-_-_-_-_http://automata.cc
+468 15 1 18 -228856 -128992 0;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 8 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 13 0;
+#X connect 8 0 2 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X connect 11 0 12 0;
+#X connect 11 0 9 0;
+#X connect 12 0 11 1;
+#X connect 13 0 5 0;
+#X connect 13 0 14 0;
+#X connect 13 1 11 0;
+#X connect 14 0 6 0;
+#X connect 15 0 11 0;
+#X connect 16 0 15 0;
+#X connect 18 0 21 0;
+#X connect 18 1 21 1;
+#X connect 19 0 25 0;
+#X connect 20 0 18 0;
+#X connect 22 0 18 0;
+#X connect 23 0 24 0;
+#X connect 24 0 22 0;
+#X connect 25 0 26 0;
+#X connect 26 0 20 0;
+#X connect 26 1 22 0;
+#X connect 26 2 23 0;

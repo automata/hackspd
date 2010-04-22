@@ -1,6 +1,6 @@
-#N canvas 653 221 346 165 10;
+#N canvas 653 127 346 165 10;
 #X obj 12 18 adc~;
-#N canvas 834 112 335 300 glitch 1;
+#N canvas 834 112 335 300 glitch 0;
 #X obj 14 109 gemhead;
 #X obj 176 -4 inlet~;
 #X obj 250 21 block~ 4096;

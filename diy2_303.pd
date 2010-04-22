@@ -1,0 +1,26 @@
+#N canvas 111 25 687 691 10;
+#X obj 66 16 303_trig /key;
+#X obj 65 635 output~;
+#X obj 66 69 303_seq3 \$1/seq;
+#X obj 66 317 303_synth3 \$1/synth;
+#X obj 233 359 print;
+#X obj 230 468 perk-bassdrum;
+#X obj 233 383 unpack f f f f;
+#X msg 287 433 0 \$1;
+#X obj 287 410 autoscale;
+#X text 276 359 <-- dá uma olhada no console pra vc sacar...;
+#X text 352 411 <- um hack para manipular o slider freq1 do drumbass
+abaixo... (escala entre 0 e 1 \, valores do slider);
+#X connect 0 0 2 0;
+#X connect 0 1 2 1;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 1 0;
+#X connect 3 0 1 1;
+#X connect 5 0 1 1;
+#X connect 5 0 1 0;
+#X connect 6 2 8 0;
+#X connect 7 0 5 1;
+#X connect 8 0 7 0;
